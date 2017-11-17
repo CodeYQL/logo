@@ -1,0 +1,20 @@
+{
+  "name": "code-yql-logo",
+  "version": "1.0.0",
+  "description": "Generate a logo from html",
+  "main": "generate.js",
+  "scripts": {
+    "generate": "node ./generate.js"
+  },
+  "author": "Tyler Stewart",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^0.13.0"
+  },
+  "devDependencies": {
+    "phantomjs-prebuilt": "^2.1.16"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
