@@ -24,3 +24,5 @@ Just modify that then run:
 ```
 $ npm run generate
 ```
+
+This will generate the [logo.png](logo.png) image.
