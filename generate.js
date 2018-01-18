@@ -14,8 +14,6 @@ async function screenshot(page, width, height, css) {
 }
 
 async function generate(css) {
-  console.log('Preparing...');
-
   const logoPath = `file://${process.cwd()}/logo.html`;
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
@@ -27,11 +25,10 @@ async function generate(css) {
     });
   }
 
-  await page.$eval('h1', h1 => h1.style['font-size'] = '20px');
-
   await screenshot(page, 200, 200, css);
 
-  await page.$eval('h1', h1 => h1.style['font-size'] = '50px');  
+  await page.$eval('h1', h1 => h1.style['font-size'] = '50px');
+  await page.$eval('h1 > span', span => span.style['display'] = 'inline');
 
   await screenshot(page, 960, 150, css);
 
@@ -48,6 +45,8 @@ async function generate(css) {
 }
 
 (async () => {
-  await generate();
-  await generate('dark');
+  await Promise.all([
+    generate(),
+    generate('dark')
+  ]);
 })();

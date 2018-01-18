@@ -22,7 +22,7 @@ h1 {
 
   font-family: 'Press Start 2P', monospace;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -31,4 +31,7 @@ h1 > i {
   color: #444;
   font-style: normal;
   padding: 0 4px;
+}
+h1 > span {
+  display: none;
 }
