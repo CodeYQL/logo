@@ -1,0 +1,9 @@
+body {
+  background-color: #333;
+}
+h1 {
+  color: #ddd;
+}
+h1 > i {
+  color: #999;
+}
