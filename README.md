@@ -1,6 +1,8 @@
 # Logo
 
-Generates a 200x200 png from an html file using Google Chrome's headless browser [Puppeteer](https://github.com/GoogleChrome/puppeteer).
+Generates images from an html file using Google Chrome's headless browser [Puppeteer](https://github.com/GoogleChrome/puppeteer).
+
+These can be used for various social media presences or other correspondence for CodeYQL.
 
 ## Install
 
@@ -25,4 +27,10 @@ Just modify that then run:
 $ npm run generate
 ```
 
-This will generate the [logo.png](logo.png) image.
+This will generate images inside the [logos](logos) directory.
+
+## Contributing
+
+Check out [logo.html](logo.html) file for the basic structure, and [style.css](style.css) for styling.
+
+New sizes and on-the-fly modifications of HTML or CSS can added inside [generate.js](generate.js).
