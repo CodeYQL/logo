@@ -4,6 +4,10 @@ Generates images from an html file using Google Chrome's headless browser [Puppe
 
 These can be used for various social media presences or other correspondence for CodeYQL.
 
+Inclues light and dark variants:
+
+![yql_light](https://github.com/CodeYQL/logo/blob/master/logos/logo_200x200.png) ![yql_dark](https://github.com/CodeYQL/logo/blob/master/logos/logo_200x200_dark.png)
+
 ## Install
 
 Clone the repository:
