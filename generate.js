@@ -27,16 +27,20 @@ async function generate(css) {
 
   await screenshot(page, 200, 200, css);
 
-  await page.$eval('h1', h1 => h1.style['font-size'] = '50px');
-  await page.$eval('h1 > span', span => span.style['display'] = 'inline');
+  await page.$eval('h1', h1 => {
+    h1.style['font-size'] = '50px';
+    h1.style['line-height'] = '50px';
+  });
 
   await screenshot(page, 960, 150, css);
 
   await page.$eval('body', h1 => h1.style['justify-content'] = 'flex-end');
   await page.$eval('h1', h1 => {
     h1.style['justify-content'] = 'flex-end';
-    h1.style['padding'] = '30px';
-    h1.style['font-size'] = '30px'
+    h1.style['padding'] = '20px';
+    h1.style['margin'] = '10px';
+    h1.style['font-size'] = '40px';
+    h1.style['line-height'] = '40px';
   });
 
   await screenshot(page, 600, 338, css);
